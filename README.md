@@ -18,7 +18,7 @@ make
 ```
 
 # Install a suitable vox model based on language and hardware constraints
-Use this link: [Download]https://alphacephei.com/vosk/models
+Use this link: [Download](https://alphacephei.com/vosk/models)
 
 
 # Final file structure
