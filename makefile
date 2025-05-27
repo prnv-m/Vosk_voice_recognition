@@ -17,10 +17,7 @@ LIB_DIRS = -L. \
            -L./lib/portaudio/lib/.libs # If libportaudio.so is there, otherwise direct path to .a is fine
 
 # --- Libraries to Link ---
-# Order can matter: application sources, then libraries they depend on.
-# For static linking PortAudio (.a), you list the .a file directly.
-# For shared linking PortAudio (.so), you'd use -L and -l.
-# We'll keep your direct path to portaudio.a for now.
+
 STATIC_LIBS = ./lib/portaudio/lib/.libs/libportaudio.a
 
 # Vosk, and system libraries (rt, asound, jack, pthread, dl for Vosk)
@@ -39,8 +36,6 @@ $(EXEC): $(SRCS)
 	$(CXX) $(CXXFLAGS) $(INCLUDE_DIRS) -o $@ $^ $(LIB_DIRS) $(STATIC_LIBS) $(SHARED_LIBS) -Wl,-rpath,'$ORIGIN'
 
 # --- Dependency Installation ---
-# Your existing install-deps for PortAudio
-# You would manually place vosk_api.h and libvosk.so/libvosk.a in the project root (D:/vsk or /mnt/d/vsk)
 install-deps:
 	mkdir -p lib
 	# Consider checking if portaudio dir exists to avoid re-downloading/re-building
