@@ -24,8 +24,8 @@ Use this link: [Download]https://alphacephei.com/vosk/models
 # Final file structure
 
 .
-├── lib/                     # External libraries (PortAudio, etc.)
-├── model/                 # Vosk speech recognition models
+├── lib/                     # External libraries (PortAudio, etc.)<br>
+├── model/                 # Vosk speech recognition models<br>
 ├── cppaudiocap             # Compiled binary for local audio capture
 ├── main.cpp          # Source code for audio processing
 ├── makefile                # Build instructions
