@@ -17,7 +17,7 @@ make
 ./cppaudiocap
 ```
 
-# Install a suitable vox model based on language and hardware constraints
+# Install a suitable Vosk model based on language and hardware constraints
 Use this link: [Download](https://alphacephei.com/vosk/models)
 
 
